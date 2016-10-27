@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!--google font-->
+<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+
+	
+		
+		<title> Star Wars RPG! </title>
+			<h1 id="header"> <strong>Star Wars RPG! </strong></h1>
+	</head>
+		<body>
+	
+			<div id = "row1">
+		<table class="characters">
+			 
+				<tr>
+				<td><p>Obi-Wan Keobi</p>
+			<img id="obi" src = "assets/images/obwk.jpg">
+					</td>
+				<td><p>Luke Skywalker</p>
+			<img id="luke" src = "assets/images/luke-sky.jpg">
+					</td>
+				
+				<td><p>Darth Sidious </p>
+			<img id="sidious" src = "assets/images/darth-sid.jpeg">
+					</td>
+				
+				<td><p>Darth Maul</p>
+			<img id="maul" src = "assets/images/darth-mal.jpg">
+					</td>
+				</tr>
+		</table>
+			</div>
+	
+
+		<div id="row2">
+		
+		<p> Your Character </p>	
+		
+		</div>
+
+		
+		<div class="attack">
+		<!--enemy row-->
+			<div id="row3">
+				Enemies Available To Attack
+				<br>
+			</div>	
+				
+			
+		<!-- defender row-->
+		<div id="row4">	
+				<br>
+				Fight Secetion
+				<br>
+				<button id="atkBtn">Attack</button>
+				<br>	
+				Defender
+		</div>		
+				
+			</div>
+
+			<div id ="row5">
+			</div>
+	
+
+		<!--link to js files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--linking is not working!!!<script src ="assets/javascript/game.js"></script>  -->
+<script>
+
+
+//moving characters
+
+$("#row1").on('click','td',function(){
+	
+	$("#row2").append(this);
+
+	$("#row3").append($("#row1").children());
+
+		
+})
+
+$("#row3").on('click','td',function() {
+
+	$ ("#row4").append(this);
+})
+
+
+//loop to assign numbers to characters. 
+
+for (i=0; i<15; i++){
+
+
+var health = randomInt (200,400);
+var attack = randomInt (5,15);
+var defense = randomInt (5,15);
+
+$('#row1').append("<button"+
+	"data-health="+ health + 
+	"data-attack=" + attack +
+	"data-baseAttack=" + attack +
+	"data-defense=" + defense + 
+	+ health + "</button>")
+
+}
+
+//to attack
+
+$("#atkBtn").on("click",function(){
+
+//make character health and defender attack go against each other using the math and parse.int functions
+
+ 
+
+})
+
+
+</script>
+
+	</body>
+</html>

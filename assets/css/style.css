@@ -1,0 +1,43 @@
+
+body {
+background-image: url("https://i.ytimg.com/vi/rkqwj5Q8TsQ/maxresdefault.jpg");
+background-repeat: no-repeat;
+}
+
+table {
+	float:left;
+	text-align:center;
+}
+td {
+	background-color:white;
+	border:5px solid #b0f442;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	font-family: 'Bungee Hairline', cursive;
+}
+
+table, p {
+	font-family: 'Bungee Hairline', cursive;
+	font-size:20px;
+
+}
+
+
+
+
+#header {
+	float:right;
+	font-size:50px;
+	font-family: 'Bungee Hairline', cursive;	
+
+
+}
+#row4
+{ margin-top:20%; }
+.attack {
+	
+
+	font-size:20px;
+	font-family: 'Bungee Hairline', cursive;
+}
